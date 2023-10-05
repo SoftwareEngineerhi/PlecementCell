@@ -9,7 +9,7 @@ const studentController = require('../controllers/studentController');
 router.get('/create', passport.checkAuthentication, studentController.createStudentPage);
 
 router.get('/delete/:id', passport.checkAuthentication, studentController.deleteStudent);
-router.get('/externaljob', externaljob);
+
 // ------------------- Posts Requests ----------
 router.post('/create-student', passport.checkAuthentication, studentController.createStudent);
 
